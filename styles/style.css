@@ -1,31 +1,349 @@
 .page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
-  margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+	min-width: 1100px;
+	max-width: 1600px;
+	margin: 0 auto;
+	font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  /* выше установили ограничения для секции */
+	height: 100vh;
+	min-height: 600px;
+	max-height: 756px;
+	background-color: #f2f2f2;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-}
-
-/* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+	width: 200px;
+	color: white;
+	margin-top: 80px;
+}
+
+.header__logo_place_header {
+	position: absolute;
+	top: 30px;
+	left: 64px;
+}
+
+.header__title {
+	width: 730px;
+}
+
+.header__title_place_header {
+	position: absolute;
+	left: 64px;
+}
+
+.header__title_font-size_xl {
+	font-size: 102px;
+	font-weight: 700;
+	line-height: 96px;
+}
+
+.header__subtitle {
+	width: 388px;
+}
+
+.header__subtitle_place_header {
+	position: absolute;
+	left: 64px;
+	bottom: 30px;
+}
+
+.header__subtitle_font-size_sm {
+	font-size: 18px;
+	line-height: 25px;
+}
+
+.header__subtitle__link {
+	text-decoration: none;
+	color: #2f80ed;
+}
+
+.header__main-illustration_place_header {
+	position: absolute;
+	z-index: 1;
+	right: 0;
+	bottom: 0;
+	height: 608px;
+}
+
+.header__main-illustration__img {
+	height: 608px;
+	width: 765px
+}
+
+.header__square-pic {
+	background-color: #2f80ed;
+	height: 568px;
+	width: 568px;
+}
+
+.header__square-pic_place_header {
+	position: absolute;
+	top: 64px;
+	right: 0;
+}
+
+.two-columns {
+	margin: 100px auto;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.description__brief {
+	width: 175px;
+	color: #2f80ed;
+	margin: 0;
+}
+
+.description__brief_font_sm {
+	line-height: 1.2;
+	font-size: 18px;
+	font-weight: 400px;
+}
+
+.description__main-text {
+	min-width: 784px;
+	width: 80%;
+}
+
+.description__main-text_font_md {
+	line-height: 34px;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.description__paragraph {
+	margin-bottom: 30px;
+}
+
+.description__span-accent {
+	font-weight: 700;
+}
+
+.digits {
+	margin-bottom: 100px;
+}
+
+.digits__table {
+	width: 1100px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	justify-content: space-around;
+	align-content: space-between;
+	min-height: 350px;
+}
+
+.digits__section-title {
+	width: 60%;
+	margin-bottom: 20px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.digits__section-title_font_lg {
+	line-height: 69px;
+	font-size: 60px;
+	font-weight: 700;
+}
+
+.digits__section-subtitle {
+	width: 60%;
+	margin: 20px auto 60px auto;
+	text-align: center;
+}
+
+.digits__table__cell {
+	width: 250px;
+}
+
+.digits__table__cell__heading {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+
+.digits__table__cell__heading_font_md {
+	line-height: 1.15;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.digits__table__cell__text__subtext {
+	margin-top: 20px;
+}
+
+.feinman {
+	background: url("../images/feynman.png") no-repeat;
+	background-size: 867px;
+	background-color: #f2f2f2;
+	height: 790px;
+	padding-top: 100px;
+}
+
+.feinman_place {
+	position: relative;
+	background-position: bottom left;
+}
+
+.feinman__title {
+	width: 648px;
+	margin: 0 auto 70px auto;
+	text-align: center;
+}
+
+.feinman__title_font_xl {
+	line-height: 1.15;
+	font-size: 120px;
+	font-weight: 700;
+}
+
+.feinman__subtitle {
+	margin: 0 auto;
+	width: 370px;
+}
+
+.feinman__subtitle_font_md {
+	line-height: 51px;
+	font-size: 36px;
+	font-weight: 400;
+}
+
+.feinman__link {
+	color: black;
+	text-decoration: none;
+}
+
+.feinman__link:hover {
+	color: #2f80ed;
+}
+
+.feinman__link_place {
+	position: absolute;
+	top: 50%;
+	right: 48px;
+}
+
+.kaufman {
+	background-color: #000;
+	overflow: hidden;
+}
+
+.kaufman_place {
+	padding: 90px 0;
+	position: relative;
+	z-index: -2;
+}
+
+.kaufman__table {
+	width: 1100px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.kaufman__section-title {
+	text-align: center;
+	width: 60%;
+	margin: 0 auto 20px auto;
+	color: white;
+}
+
+.kaufman__section-subtitle {
+	text-align: center;
+	margin: 0 auto;
+	width: 60%;
+	color: white;
+}
+
+.kaufman__table_cell {
+	width: 200px;
+}
+
+.kaufman__table_cell__text {
+	margin-top: 20px;
+}
+
+.kaufman__triagle__img {
+	width: 877px;
+	height: 877px;
+}
+
+.kaufman__triagle_place {
+	position: absolute;
+	top: 0;
+	right: -210px;
+	z-index: -1;
+}
+
+.footer {
+	min-height: 350px;
+}
+
+.footer__columns {
+	display: flex;
+	width: 90%;
+	flex-basis: 711px;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.footer__columns__column_flex_space  {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 350px;
+	width: 800px;
+}
+
+.footer__columns__column__logo {
+	width: 183px;
+	height: 35px
+}
+
+.footer__columns__column__author {
+	padding: 18px 0;
+	margin-bottom: 40px;
+}
+
+.footer__columns__column__author_font_md {
+	line-height: 25px;
+	font-size: 18px;
+	color: white;
+}
+
+.footer__columns__column__column-heading {
+	margin-bottom: 20px;
+}
+
+.footer__columns__column_content_info {
+	width: 150px;
+}
+
+.footer__columns__column__column-heading_font_sm {
+	line-height: 30px;
+	font-size: 18px;
+	font-weight: 700;
+	color: white;
+}
+
+.footer__columns__column__column-links_font_sm {
+	line-height: 30px;
+	font-size: 18px;
+	color: white;
+}
+
+.footer__columns__column__column-links_style {
+	text-decoration: none;
+	color: white;
+}
+
+.footer__columns__column__column-links__img {
+	padding-right: 10px;
 }
