@@ -1,5 +1,4 @@
-@import url("./_theme_dark/section-title_theme_dark.css");
-@import url("./_line_height/section-title_line_height.css");
+@import url("./_theme/section-title_theme_dark.css");
 
 .section-title {
 	width: 60%;

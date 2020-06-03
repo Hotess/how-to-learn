@@ -1,9 +1,0 @@
-.anchor {
-	opacity: 1;
-	text-decoration: none;
-	transition: .1s opacity linear; 
-}
-
-.anchor:hover {
-	opacity: .7;
-}

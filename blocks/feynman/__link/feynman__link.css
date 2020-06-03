@@ -6,4 +6,10 @@
 	right: 48px;
 	line-height: 51px;
 	font-size: 36px;
+	transition: .1s opacity linear;
+	opacity: 1;
+}
+
+.feynman__link:hover {
+	opacity: .7;
 }

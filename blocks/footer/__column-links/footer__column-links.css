@@ -6,4 +6,10 @@
 	margin: 0;
 	text-decoration: none;
 	color: white;
+	transition: .1s opacity linear;
+	opacity: 1;
+}
+
+.footer__column-links:hover { 
+	opacity: .7;
 }

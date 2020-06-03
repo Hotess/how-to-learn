@@ -1,7 +1,4 @@
 .video__iframes {
-	margin-top: 50px;
-}
-
-.video__iframes:nth-of-type(2n) {
-	margin-left: 20px;
+	width: 67%;
+	margin: 0 auto;
 }
